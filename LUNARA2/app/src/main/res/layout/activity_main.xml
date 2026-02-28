@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_gradient">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- 🌸 HEADER -->
+            <TextView
+                android:text="Pregnancy Tracker 💗"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!-- GLASS CARD -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@drawable/glass_card"
+                android:padding="24dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Select Last Menstrual Period (LMP)"
+                    android:textStyle="bold"
+                    android:textColor="#C2185B"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <DatePicker
+                    android:id="@+id/datePicker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:id="@+id/calcBtn"
+                    android:text="Calculate Pregnancy Status"
+                    android:background="@drawable/rounded_pink"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginTop="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"/>
+
+                <TextView
+                    android:id="@+id/resultText"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#880E4F"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/babyInfo"
+                    android:textSize="16sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <!-- SYMPTOMS CARD -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@drawable/glass_card"
+                android:padding="24dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Report Symptoms"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#C2185B"
+                    android:layout_marginBottom="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <CheckBox android:id="@+id/bleeding"
+                    android:text="Bleeding"/>
+
+                <CheckBox android:id="@+id/fever"
+                    android:text="Fever"/>
+
+                <CheckBox android:id="@+id/swelling"
+                    android:text="Severe Swelling"/>
+
+                <CheckBox android:id="@+id/noMovement"
+                    android:text="No Baby Movement"/>
+
+                <Button
+                    android:id="@+id/checkRiskBtn"
+                    android:text="Check Risk Level"
+                    android:background="@drawable/rounded_orange"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"/>
+
+                <TextView
+                    android:id="@+id/riskResult"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <!-- EMERGENCY CARD -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@drawable/glass_card"
+                android:padding="24dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/emergencyBtn"
+                    android:text="🚨 Emergency Call"
+                    android:background="@drawable/rounded_red"
+                    android:textColor="#FFFFFF"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"/>
+
+                <TextView
+                    android:text="Do not panic. Help is one tap away."
+                    android:textColor="#C2185B"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/reminderText"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#6A1B9A"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

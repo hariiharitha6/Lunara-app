@@ -1,0 +1,51 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:background="#FFF1F7"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <TextView
+      android:text="Pregnant Woman Login"
+      android:textSize="22sp"
+      android:textStyle="bold"
+      android:textColor="#C2185B"
+      android:layout_marginBottom="30dp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"/>
+
+  <EditText
+      android:id="@+id/mobileInput"
+      android:hint="Mobile Number"
+      android:inputType="phone"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"/>
+
+  <EditText
+      android:id="@+id/passwordInput"
+      android:hint="Password"
+      android:inputType="textPassword"
+      android:layout_marginTop="15dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"/>
+
+  <Button
+      android:id="@+id/loginBtn"
+      android:text="Login"
+      android:backgroundTint="#E91E63"
+      android:textColor="#FFFFFF"
+      android:layout_marginTop="20dp"
+      android:layout_width="match_parent"
+      android:layout_height="55dp"/>
+
+  <TextView
+      android:id="@+id/signupText"
+      android:text="New user? Sign Up"
+      android:textColor="#AD1457"
+      android:textStyle="bold"
+      android:layout_marginTop="20dp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"/>
+</LinearLayout>
